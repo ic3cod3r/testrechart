@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-const data = [
+const data = [   // this is where I would change the name and stuff
   {
     name: 'Page A',
     uv: 4000,
@@ -47,7 +47,7 @@ const data = [
 ];
 
 export default class BarCharty extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/simple-bar-chart-tpz8r';
+  static demoUrl = 'https://codesandbox.io/s/simple-bar-chart-tpz8r';  // this is where I would change the api call to do with something involving ShipStation
 
   render() {
     return (
