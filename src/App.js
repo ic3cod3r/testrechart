@@ -1,5 +1,5 @@
 import React from 'react';
-import { PieChart } from 'recharts';
+//import { PieChart } from 'recharts';
 import BarCharty from './barChart';
 import StockChart from './stockChart';
 import PieCharty from './pieChart';
