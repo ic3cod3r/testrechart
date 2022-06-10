@@ -10,14 +10,14 @@ const Container = styled.div`
         ::-webkit-progress-bar{
             height: 10px;
             border-radius: 20px;
-            background-color: #eee;
+            background-color: #000000;
         }
 
 
         ::-webkit-progress-value {
             height: 10px;
             border-radius: 20px;
-            background-color: ${props => props.color};
+            background-color: #8D918D;
         } 
     }
 `;
@@ -42,7 +42,7 @@ ProgressBar.propTypes = {
 ProgressBar.defaultProps = {
     max: 100,
     color: '#ff7979',
-    width: '150px',
+    width: '100%',
 };
 
 export default ProgressBar;

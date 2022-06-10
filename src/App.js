@@ -9,7 +9,7 @@ import PieCharty from './pieChart';
 import ProgressBar from './NewProgressBar';
 
 
-function App() {
+export default function App() {
   const [value, updateValue] = React.useState(0);
 
   React.useEffect(() => {
@@ -17,16 +17,16 @@ function App() {
 
       updateValue(oldValue => {
 
-        const newValue = oldValue + 10;
+        const newValue = oldValue + 1;
 
-        if (newValue === 100) {
+        if (newValue >= 99) {
           
           clearInterval(interval);
         }
         
         return newValue;
       });
-    }, 1000);
+    }, 100);
   }, []);
 
 
@@ -47,4 +47,4 @@ function App() {
     </div>
   )
 }
-export default App
+
