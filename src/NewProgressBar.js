@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from 'styled-components';
 
+
 const Container = styled.div`
     progress[value] {
         width: ${props => props.width};
@@ -23,13 +24,15 @@ const Container = styled.div`
 `;
 
 const ProgressBar = props => {
-    const {value, max, color, width } = props;
+    const {value, max, color, width} = props;
     return (
         <Container color={color} width={width}>
             <progress value={value} max={max} />
         </Container>
     );
 };
+
+
 
 ProgressBar.propTypes = {
     value: PropTypes.number.isRequired,
