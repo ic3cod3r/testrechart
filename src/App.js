@@ -3,10 +3,7 @@ import BarCharty from './barChart';
 import LineCharty from './lineChartBasic';
 import PieCharty from './pieChart';
 import ProgressBar from './NewProgressBar';
-import Sidebar from './Sidebar';
-import './App.css';
-
-
+import Sidebary from './Sidebary';
 
 
 export default function App() {
@@ -27,7 +24,7 @@ export default function App() {
   return (
     <div>
       <div>
-        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+        <Sidebary/>
       </div>
       <div>
         <h1 style={{ textAlign: "center" }}> Hi ShipStation!</h1>
