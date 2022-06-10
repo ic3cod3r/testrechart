@@ -9,6 +9,7 @@ import ProgressBar from './NewProgressBar';
 
 export default function App() {
   const [progress, setProgress] = React.useState(1);
+  
 
   React.useEffect(() => {
     const timer = setInterval(() => {
@@ -16,7 +17,6 @@ export default function App() {
     }, 100);
     return () => {
       clearInterval(timer);
-
     };
   }, []);
 
