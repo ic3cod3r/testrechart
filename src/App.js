@@ -13,7 +13,7 @@ export default function App() {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setProgress((prevProgress) => (prevProgress >= 100 ? 10 : prevProgress + 1));
-    }, 200);
+    }, 100);
     return () => {
       clearInterval(timer);
     };
