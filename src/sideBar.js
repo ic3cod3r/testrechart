@@ -8,14 +8,14 @@ export default props => {
       <a className="menu-item" href="/">
         Home
       </a>
-      <a className="menu-item" href="/salads">
-        Salads
+      <a className="menu-item" href="/stats2">
+        Efficiency over each quarter
       </a>
-      <a className="menu-item" href="/pizzas">
-        Pizzas
+      <a className="menu-item" href="/stats3">
+        Some more stats "Line chart"
       </a>
-      <a className="menu-item" href="/desserts">
-        Desserts
+      <a className="menu-item" href="/stats3">
+        Even more of some other stats "Pie chart"
       </a>
     </Menu>
   );
