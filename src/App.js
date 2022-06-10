@@ -16,6 +16,7 @@ export default function App() {
     }, 100);
     return () => {
       clearInterval(timer);
+
     };
   }, []);
 
@@ -26,12 +27,12 @@ export default function App() {
       <div>
         <BarCharty />
       </div>
-      <div>
+      {/* <div>
         <StockChart />
       </div>
       <div>
         <PieCharty />
-      </div>
+      </div> */}
       <ProgressBar value={progress} />
     </div>
   )

@@ -29,6 +29,7 @@ const ProgressBar = props => {
         <Container color={color} width={width}>
             <progress value={value} max={max} />
         </Container>
+
     );
 };
 
