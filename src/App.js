@@ -3,6 +3,8 @@ import BarCharty from './barChart';
 import StockChart from './stockChart';
 import PieCharty from './pieChart';
 import ProgressBar from './NewProgressBar';
+import Sidebar from './Sidebar';
+import './App.css';
 
 
 
@@ -24,6 +26,9 @@ export default function App() {
 
   return (
     <div>
+      <div>
+        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+      </div>
       <div>
         <BarCharty />
       </div>
