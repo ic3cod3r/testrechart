@@ -33,26 +33,28 @@ export default class LineCharty extends PureComponent {
 
   render() {
     return (
-        <LineChart
-          width={1590}
-          height={590}
-          data={data}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
+        <><LineChart
+            width={1590}
+            height={590}
+            data={data}
+            margin={{
+                top: 5,
+                right: 30,
+                left: 20,
+                bottom: 5,
+            }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="ordersCancelled" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="ordersFullfiled" stroke="#82ca9d" />
-          <Line type="monotone" dataKey="ordersLost" stroke="#FF0000" />
-        </LineChart>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Line type="monotone" dataKey="ordersCancelled" stroke="#8884d8" activeDot={{ r: 8 }} />
+            <Line type="monotone" dataKey="ordersFullfiled" stroke="#82ca9d" />
+            <Line type="monotone" dataKey="ordersLost" stroke="#FF0000" />
+        </LineChart><div>
+                <h1 style={{ textAlign: "center" }}> Efficiency over each quarter </h1>
+            </div></>
     );
   }
 }
