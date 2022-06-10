@@ -7,7 +7,6 @@ const Container = styled.div`
     progress[value] {
         width: ${props => props.width};
         height: ${props => props.height};
-        // heigth: 15px
         appearance: none;
         
         ::-webkit-progress-bar{
@@ -51,7 +50,7 @@ ProgressBar.defaultProps = {
     max: 100,
     color: '#ff7979',
     width: '100%',
-    height: '100%'
+    height: "100%"
 };
 
 export default ProgressBar;
