@@ -5,26 +5,19 @@ import PieCharty from './pieChart';
 import ProgressBar from './NewProgressBar';
 
 
+
+
 export default function App() {
-  const [value, updateValue] = React.useState(0);
+  const [progress, setProgress] = React.useState(1);
 
   React.useEffect(() => {
-    const interval = setInterval(() => {
-
-      updateValue(oldValue => {
-
-        const newValue = oldValue + 1;
-
-        if (newValue >= 99) {
-          
-          clearInterval(interval);
-        }
-        
-        return newValue;
-      });
-    }, 100);
+    const timer = setInterval(() => {
+      setProgress((prevProgress) => (prevProgress >= 100 ? 10 : prevProgress + 1));
+    }, 200);
+    return () => {
+      clearInterval(timer);
+    };
   }, []);
-
 
 
 
@@ -39,7 +32,7 @@ export default function App() {
       <div>
         <PieCharty />
       </div>
-      <ProgressBar value={value} />
+      <ProgressBar value={progress} />
     </div>
   )
 }
