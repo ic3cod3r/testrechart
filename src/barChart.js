@@ -3,22 +3,28 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 
 const data = [   // this is where I would change the name and stuff
   {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    name: 'Q1',
+    Labels: 4000,
+    Picked: 2400,
+    Packed: 2400,
   },
   {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    name: 'Q2',
+    Labels: 3000,
+    Picked: 1398,
+    Packed: 2210,
   },
   {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    name: 'Q3',
+    Labels: 9800,
+    Picked: 2000,
+    Packed: 2290,
+  },
+  {
+    name: 'Q4',
+    Labels: 8420,
+    Picked: 1877,
+    Packed: 1913,
   }
 ];
 
@@ -29,14 +35,14 @@ export default class BarCharty extends PureComponent {
     return (
 
         <BarChart
-          width={500}
-          height={400}
+          width={1100}
+          height={1000}
           data={data}
           margin={{
-            top: 150,
-            right: 30,
-            left: 20,
-            bottom: 5
+            top: 200,
+            right: -20,
+            left: 400,
+            bottom: 50
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
@@ -44,9 +50,9 @@ export default class BarCharty extends PureComponent {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#82ca9d" />
-          <Bar dataKey="amt" fill="#958f2a" />
+          <Bar dataKey="Labels" fill="#82ca9d" />
+          <Bar dataKey="Picked" fill="#8884d8" />
+          <Bar dataKey="Packed" fill="#958f2a" />
         </BarChart>
 
     );

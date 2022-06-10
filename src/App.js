@@ -33,6 +33,9 @@ export default function App() {
       <div>
         <PieCharty />
       </div> */}
+      <div>
+        <h1 style={{textAlign: "center"}}> Efficiency over each quarter </h1>
+      </div>
       <ProgressBar value={progress} />
     </div>
   )
