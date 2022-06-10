@@ -11,13 +11,13 @@ export default props => {
       <a className="menu-item" href="/">
         Home
       </a>
-      <a className="menu-item" href="/stats2">
+      <a className="menu-item" href="/stats1">
         Efficiency over each quarter
       </a>
-      <a className="menu-item" href="/stats3">
+      <a className="menu-item" href="/stats2">
         Some more stats "Line chart"
       </a>
-      <a className="menu-item" href="/stats4">
+      <a className="menu-item" href="/stats3">
         Even more of some other stats "Pie chart"
       </a>
     </Menu>
