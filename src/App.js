@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import BarCharty from './barChart';
-import StockChart from './stockChart';
+// import StockChart from './stockChart';
 import PieCharty from './pieChart';
 import ProgressBar from './NewProgressBar';
 import Sidebar from './Sidebar';
@@ -30,14 +30,14 @@ export default function App() {
         <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
       </div>
       <div>
-        <BarCharty />
+        <h1 style={{ textAlign: "center" }}> Hi ShipStation!</h1>
       </div>
-      {/* <div>
-        <StockChart />
+      <div>
+        <BarCharty />
       </div>
       <div>
         <PieCharty />
-      </div> */}
+      </div>
       <ProgressBar value={progress} />
     </div>
   )

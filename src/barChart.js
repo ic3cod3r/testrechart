@@ -11,20 +11,20 @@ const data = [   // this is where I would change the name and stuff
   {
     name: 'Q2',
     Labels: 3000,
-    Picked: 1398,
-    Packed: 2210,
+    Picked: 2210,
+    Packed: 1398,
   },
   {
     name: 'Q3',
     Labels: 9800,
-    Picked: 2000,
-    Packed: 2290,
+    Picked: 2290,
+    Packed: 2000,
   },
   {
     name: 'Q4',
     Labels: 8420,
-    Picked: 1877,
-    Packed: 1913,
+    Picked: 1913,
+    Packed: 1877,
   }
 ];
 
