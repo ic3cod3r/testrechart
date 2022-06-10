@@ -28,7 +28,7 @@ export default class PieCharty extends PureComponent {
 
   render() {
     return (
- 
+     
         <PieChart width={400} height={400}>
           <Pie
             data={data}

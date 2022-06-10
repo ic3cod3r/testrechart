@@ -17,7 +17,7 @@ function App() {
 
       updateValue(oldValue => {
 
-        const newValue = oldValue +10;
+        const newValue = oldValue + 10;
 
         if (newValue === 100) {
           

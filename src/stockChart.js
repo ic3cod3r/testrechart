@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import { LineChart, Line, Tooltip } from 'recharts';
+import { LineChart, Line, Tooltip, ResponsiveContainer } from 'recharts';
 
 export default function StockChart() {
     const [error, setError] = useState(null);
@@ -33,10 +33,12 @@ export default function StockChart() {
     }, [])
     return (
     <div>
+      
         <LineChart width={500} height={250} margin={{ top: 150, right: 30, left: 20, bottom: 5 }} data={items}>
         <Line dot={false}  type="monotone" dataKey="1. open" stroke="rgb(0,200,5)" yAxisId="100" />
         <Tooltip content={<CustomTooltip data={items} />} />
         </LineChart>
+
     </div>
     )
 }

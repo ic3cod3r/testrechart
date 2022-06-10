@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [   // this is where I would change the name and stuff
   {
@@ -51,7 +51,7 @@ export default class BarCharty extends PureComponent {
 
   render() {
     return (
-      
+
         <BarChart
           width={500}
           height={400}
@@ -71,7 +71,7 @@ export default class BarCharty extends PureComponent {
           <Bar dataKey="pv" fill="#8884d8" />
           <Bar dataKey="uv" fill="#82ca9d" />
         </BarChart>
-      
+
     );
   }
 }
