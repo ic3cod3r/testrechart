@@ -35,13 +35,13 @@ export default class BarCharty extends PureComponent {
     return (
 
         <><BarChart
-        width={1100}
-        height={1000}
+        width={1590}
+        height={590}
         data={data}
         margin={{
           top: 200,
-          right: -20,
-          left: 400,
+          right: 30,
+          left: 20,
           bottom: 50
         }}
       >

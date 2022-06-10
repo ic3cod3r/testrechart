@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import BarCharty from './barChart';
-// import StockChart from './stockChart';
+import LineCharty from './lineChartBasic';
 import PieCharty from './pieChart';
 import ProgressBar from './NewProgressBar';
 import Sidebar from './Sidebar';
@@ -34,6 +34,9 @@ export default function App() {
       </div>
       <div>
         <BarCharty />
+      </div>
+      <div>
+        <LineCharty/>
       </div>
       <div>
         <PieCharty />
