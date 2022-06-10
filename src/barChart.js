@@ -34,27 +34,28 @@ export default class BarCharty extends PureComponent {
   render() {
     return (
 
-        <BarChart
-          width={1100}
-          height={1000}
-          data={data}
-          margin={{
-            top: 200,
-            right: -20,
-            left: 400,
-            bottom: 50
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="Labels" fill="#82ca9d" />
-          <Bar dataKey="Picked" fill="#8884d8" />
-          <Bar dataKey="Packed" fill="#958f2a" />
-        </BarChart>
-
+        <><BarChart
+        width={1100}
+        height={1000}
+        data={data}
+        margin={{
+          top: 200,
+          right: -20,
+          left: 400,
+          bottom: 50
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="Labels" fill="#82ca9d" />
+        <Bar dataKey="Picked" fill="#8884d8" />
+        <Bar dataKey="Packed" fill="#958f2a" />
+      </BarChart><div>
+          <h1 style={{ textAlign: "center" }}> Efficiency over each quarter </h1>
+        </div></>
     );
   }
 }
