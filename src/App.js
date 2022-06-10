@@ -3,37 +3,48 @@ import React, { useState, useRef, useEffect } from 'react'
 import BarCharty from './barChart';
 import StockChart from './stockChart';
 import PieCharty from './pieChart';
-import Timery from './timer';
-// import NoApproval from './timer';
-import ProgressBar from "./progress-bar.component";
+// import Timery from './timer';
 
+// import ProgressBar from "./progress-bar.component";
+import ProgressBar from './NewProgressBar';
 
 
 function App() {
-  const [completed, setCompleted] = useState(0);   // This goes with the ProgressBar
+  const [value, updateValue] = React.useState(0);
 
-  useEffect(() => {    
-    // setInterval(() => setCompleted(Math.floor (Math.random() * 100) + 1), 1000);     
-    setInterval(() => setCompleted(Math.floor (<Timery/>)));
-  }, []);     
-  // (Math.random() * 100)
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+
+      updateValue(oldValue => {
+
+        const newValue = oldValue +10;
+
+        if (newValue === 100) {
+          
+          clearInterval(interval);
+        }
+        
+        return newValue;
+      });
+    }, 1000);
+  }, []);
+
+
+
+
   return (
     <div>
       <div>
         <BarCharty />
       </div>
       <div>
-        <StockChart/>
+        <StockChart />
       </div>
       <div>
-        <PieCharty/>
+        <PieCharty />
       </div>
-      <div className="App">
-        <ProgressBar bgcolor={"#6a1b9a"} completed={completed} />    
-      </div>
-
+      <ProgressBar value={value} />
     </div>
-
   )
 }
 export default App
