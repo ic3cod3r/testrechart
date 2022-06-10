@@ -3,28 +3,28 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 're
 
 const data = [
   {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    name: 'Q1',
+    ordersCancelled: 4000,
+    ordersFullfiled: 2400,
+    ordersLost: 2400,
   },
   {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    name: 'Q2',
+    ordersCancelled: 3000,
+    ordersFullfiled: 1398,
+    ordersLost: 2210,
   },
   {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    name: 'Q3',
+    ordersCancelled: 2000,
+    ordersFullfiled: 9800,
+    ordersLost: 2290,
   },
   {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    name: 'Q4',
+    ordersCancelled: 2780,
+    ordersFullfiled: 3908,
+    ordersLost: 2000,
   }
 ];
 
@@ -49,8 +49,9 @@ export default class LineCharty extends PureComponent {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="ordersCancelled" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="ordersFullfiled" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="ordersLost" stroke="#FF0000" />
         </LineChart>
     );
   }
