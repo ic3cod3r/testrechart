@@ -1,11 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
-//import { PieChart } from 'recharts';
 import BarCharty from './barChart';
 import StockChart from './stockChart';
 import PieCharty from './pieChart';
-// import Timery from './timer';
-
-// import ProgressBar from "./progress-bar.component";
 import ProgressBar from './NewProgressBar';
 
 
