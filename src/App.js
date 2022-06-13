@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import './App.css'
 import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-router-dom"
 import ProgressBar from './NewProgressBar'
 import Sidebary from './Sidebary'
