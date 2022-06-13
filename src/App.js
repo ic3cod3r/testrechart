@@ -25,22 +25,7 @@ export default function App() {
     <div>
       <div>
         <Sidebary/>
-          {/* <div>
-            <BarCharty/>
-          </div> */}
       </div>
-      {/* <div>
-        <h1 style={{ textAlign: "center" }}> Hi ShipStation!</h1>
-      </div>
-      <div>
-        <BarCharty />
-      </div>
-      <div>
-        <LineCharty/>
-      </div>
-      <div>
-        <PieCharty />
-      </div> */}
       <ProgressBar value={progress} />
     </div>
   )
