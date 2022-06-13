@@ -25,8 +25,10 @@ export default function App() {
     <div>
       <div>
         <Sidebary/>
+        <div>
+          <ProgressBar value={progress} />
+        </div>
       </div>
-      <ProgressBar value={progress} />
     </div>
   )
 }
