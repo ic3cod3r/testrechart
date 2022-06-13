@@ -4,7 +4,7 @@ import LineCharty from './lineChartBasic';
 import PieCharty from './pieChart';
 import ProgressBar from './NewProgressBar';
 import Sidebary from './Sidebary';
-
+//this is a test
 
 export default function App() {
   const [progress, setProgress] = React.useState(1);
