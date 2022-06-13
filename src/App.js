@@ -1,21 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-router-dom";
-import ProgressBar from './NewProgressBar';
-import Sidebary from './Sidebary';
+import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-router-dom"
+import ProgressBar from './NewProgressBar'
+import Sidebary from './Sidebary'
 
 
 export default function App() {
-  const [progress, setProgress] = React.useState(1);
+  const [progress, setProgress] = React.useState(1)
   
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-      setProgress((prevProgress) => (prevProgress >= 100 ? 10 : prevProgress + 1));
-    }, 100);
+      setProgress((prevProgress) => (prevProgress >= 100 ? 10 : prevProgress + 1))
+    }, 100)
     return () => {
-      clearInterval(timer);
-    };
-  }, []);
+      clearInterval(timer)
+    }
+  }, [])
 
 
 

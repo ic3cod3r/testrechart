@@ -1,12 +1,12 @@
-import React from 'react';
-import { useEffect, useState } from "react";
-import { LineChart, Line, Tooltip, ResponsiveContainer } from 'recharts';
+import React from 'react'
+import { useEffect, useState } from "react"
+import { LineChart, Line, Tooltip, ResponsiveContainer } from 'recharts'
 
 export default function StockChart() {
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState([]);
-    const data = [];
+    const [error, setError] = useState(null)
+    const [isLoaded, setIsLoaded] = useState(false)
+    const [items, setItems] = useState([])
+    const data = []
     // Note: the empty deps array [] means
     // this useEffect will run once
     // similar to componentDidMount()
@@ -26,8 +26,8 @@ export default function StockChart() {
             // instead of a catch() block so that we don't swallow
             // exceptions from actual bugs in components.
             (error) => {
-                setIsLoaded(true);
-                setError(error);
+                setIsLoaded(true)
+                setError(error)
             }
         )
     }, [])

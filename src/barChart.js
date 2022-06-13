@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React, { PureComponent } from 'react'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
 const data = [   // this is where I would change the name and stuff
   {
@@ -26,10 +26,10 @@ const data = [   // this is where I would change the name and stuff
     Picked: 1913,
     Packed: 1877,
   }
-];
+]
 
 export default class BarCharty extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/simple-bar-chart-tpz8r';  // this is where I would change the api call to do with something involving ShipStation
+  static demoUrl = 'https://codesandbox.io/s/simple-bar-chart-tpz8r'  // this is where I would change the api call to do with something involving ShipStation
 
   render() {
     return (
@@ -54,6 +54,6 @@ export default class BarCharty extends PureComponent {
         <Bar dataKey="Picked" fill="#8884d8" />
         <Bar dataKey="Packed" fill="#958f2a" />
       </BarChart>
-    );
+    )
   }
 }

@@ -1,8 +1,8 @@
-import React from 'react';
-import gear from './shipStation.png'; 
-import Image from 'react-image-resizer';
+import React from 'react'
+import gear from './shipStation.png'
+import Image from 'react-image-resizer'
 
-console.log(gear); 
+console.log(gear)
 
 function Gear() {
     return (
@@ -16,4 +16,4 @@ function Gear() {
     )
   }
 
-export default Gear;
+export default Gear

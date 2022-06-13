@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
+import React, { PureComponent } from 'react'
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts'
 
 const data = [
   {
@@ -26,10 +26,10 @@ const data = [
     ordersFullfiled: 3908,
     ordersLost: 2000,
   }
-];
+]
 
 export default class LineCharty extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
+  static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v'
 
   render() {
     return (
@@ -53,6 +53,6 @@ export default class LineCharty extends PureComponent {
             <Line type="monotone" dataKey="ordersFullfiled" stroke="#82ca9d" />
             <Line type="monotone" dataKey="ordersLost" stroke="#FF0000" />
         </LineChart>
-    );
+    )
   }
 }
