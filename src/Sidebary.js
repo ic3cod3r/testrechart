@@ -6,7 +6,7 @@ import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-rout
 import BarCharty from './barChart';
 import LineCharty from './lineChartBasic';
 import PieCharty from './pieChart';
-
+import Gear from './Gear';
 
 export default props => {
   return (
@@ -66,6 +66,7 @@ function Home() {
     <div>
       <h2>Home</h2>
       <h1 style={{ textAlign: "center" }}> Hi ShipStation!</h1>
+      <Gear/>
     </div>
   );
 }
