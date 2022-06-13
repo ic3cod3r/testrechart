@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 
 const data = [
   { name: 'Group A', value: 400 },
@@ -33,6 +33,7 @@ export default class PieCharty extends PureComponent {
          width={1600} 
          height={600}
         >
+          <Tooltip/>
           <Pie
             data={data}
             cx="50%"
