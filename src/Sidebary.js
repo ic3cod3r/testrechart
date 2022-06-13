@@ -82,7 +82,6 @@ function Layout() {
 function Home() {
   return (
     <div>
-      <h2 style={{ textAlign: "center" }}>Home</h2>
       <h1 style={{ textAlign: "center" }}> Hi ShipStation!</h1>
       <Gear/>
     </div>
