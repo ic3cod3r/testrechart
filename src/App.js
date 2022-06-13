@@ -1,10 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react'
-import BarCharty from './barChart';
-import LineCharty from './lineChartBasic';
-import PieCharty from './pieChart';
+import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-router-dom";
 import ProgressBar from './NewProgressBar';
 import Sidebary from './Sidebary';
-//this is a test
+
 
 export default function App() {
   const [progress, setProgress] = React.useState(1);
@@ -32,4 +30,4 @@ export default function App() {
     </div>
   )
 }
-
+//test
