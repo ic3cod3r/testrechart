@@ -28,8 +28,7 @@ export default class PieCharty extends PureComponent {
 
   render() {
     return (
-     
-        <><PieChart
+        <PieChart
          width={1600} 
          height={600}
         >
@@ -50,10 +49,6 @@ export default class PieCharty extends PureComponent {
             ))}
           </Pie>
         </PieChart>
-        <div>
-          <h1 style={{ textAlign: "center" }}> Sales over each quarter </h1>
-        </div></>
-
     );
   }
 }

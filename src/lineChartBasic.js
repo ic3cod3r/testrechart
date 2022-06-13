@@ -33,7 +33,7 @@ export default class LineCharty extends PureComponent {
 
   render() {
     return (
-        <><LineChart
+        <LineChart
             width={1590}
             height={590}
             data={data}
@@ -52,9 +52,7 @@ export default class LineCharty extends PureComponent {
             <Line type="monotone" dataKey="ordersCancelled" stroke="#8884d8" activeDot={{ r: 8 }} />
             <Line type="monotone" dataKey="ordersFullfiled" stroke="#82ca9d" />
             <Line type="monotone" dataKey="ordersLost" stroke="#FF0000" />
-        </LineChart><div>
-                <h1 style={{ textAlign: "center" }}> Efficiency over each quarter </h1>
-            </div></>
+        </LineChart>
     );
   }
 }

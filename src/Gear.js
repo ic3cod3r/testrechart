@@ -4,11 +4,6 @@ import Image from 'react-image-resizer';
 
 console.log(gear); 
 
-// function Gear() {
-//   // Import result is the URL of your image
-//   return <img src={gear} alt="ShipStation Logo" />;
-// }
-
 function Gear() {
     return (
         <div>

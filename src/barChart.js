@@ -34,7 +34,7 @@ export default class BarCharty extends PureComponent {
   render() {
     return (
 
-        <><BarChart
+      <BarChart
         width={1590}
         height={590}
         data={data}
@@ -53,9 +53,7 @@ export default class BarCharty extends PureComponent {
         <Bar dataKey="Labels" fill="#82ca9d" />
         <Bar dataKey="Picked" fill="#8884d8" />
         <Bar dataKey="Packed" fill="#958f2a" />
-      </BarChart><div>
-          <h1 style={{ textAlign: "center" }}> Efficiency over each quarter </h1>
-        </div></>
+      </BarChart>
     );
   }
 }

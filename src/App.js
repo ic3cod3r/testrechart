@@ -27,6 +27,9 @@ export default function App() {
           <ProgressBar value={progress} />
         </div>
       </div>
+      <div>
+        <h1 style={{ textAlign: "center" }}> This is a motivation quote </h1>
+      </div>
     </div>
   )
 }

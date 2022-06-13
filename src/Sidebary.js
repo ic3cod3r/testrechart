@@ -64,7 +64,7 @@ function Layout() {
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <h2 style={{ textAlign: "center" }}>Home</h2>
       <h1 style={{ textAlign: "center" }}> Hi ShipStation!</h1>
       <Gear/>
     </div>
@@ -74,7 +74,7 @@ function Home() {
 function Bar() {
   return (
     <div>
-      <h2>Stats1</h2>
+      <h1 style={{ textAlign: "center" }}>Efficiency over each quarter</h1>
       <BarCharty/>
     </div>
   );
@@ -83,7 +83,7 @@ function Bar() {
 function Line() {
   return (
     <div>
-      <h2>Stats2</h2>
+      <h1 style={{ textAlign: "center" }}>Efficiency over each quarter</h1>
       <LineCharty/>
     </div>
   );
@@ -92,7 +92,7 @@ function Line() {
 function Pie() {
   return (
     <div>
-      <h2>Stats3</h2>
+      <h1 style={{ textAlign: "center" }}> Sales over each quarter </h1>
       <PieCharty/>
     </div>
   );
