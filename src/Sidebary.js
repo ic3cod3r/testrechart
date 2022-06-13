@@ -6,30 +6,11 @@ import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-rout
 import BarCharty from './barChart';
 import LineCharty from './lineChartBasic';
 import PieCharty from './pieChart';
-console.log("work1");
-// export default props => {
-//   return (
-//     <Menu>
-//       <a className="menu-item" href="/">
-//         Home
 
-//       </a>
-//       <a className="menu-item" href="/stats1">
-//         Efficiency over each quarter
-//       </a>
-//       <a className="menu-item" href="/stats2">
-//         Some more stats "Line chart"
-//       </a>
-//       <a className="menu-item" href="/stats3">
-//         Even more of some other stats "Pie chart"
-//       </a>
-//     </Menu>
-//   );
-// };
-console.log("work2");
+
 export default props => {
   return (
-    console.log("work3"),
+
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -43,7 +24,7 @@ export default props => {
     
   );
 };
-console.log("work4");
+
 
 
 
