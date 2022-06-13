@@ -39,10 +39,10 @@ export default class BarCharty extends PureComponent {
         height={590}
         data={data}
         margin={{
-          top: 200,
+          top: 5,
           right: 30,
           left: 20,
-          bottom: 50
+          bottom: 5
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />

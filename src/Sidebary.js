@@ -1,5 +1,6 @@
 import React from 'react';
 import './Sidebar.css';
+import { slide as Menu } from 'react-burger-menu';
 import useFetch from 'use-http'
 import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-router-dom";
 import BarCharty from './barChart';
@@ -9,7 +10,6 @@ import PieCharty from './pieChart';
 
 export default props => {
   return (
-
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -20,7 +20,6 @@ export default props => {
         </Route>
       </Routes>
     </Router>
-    
   );
 };
 
