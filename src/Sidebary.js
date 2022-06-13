@@ -1,5 +1,4 @@
 import React from 'react';
-// import { slide as Menu } from 'react-burger-menu';
 import './Sidebar.css';
 import useFetch from 'use-http'
 import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-router-dom";
