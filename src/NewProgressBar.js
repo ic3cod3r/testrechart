@@ -5,24 +5,24 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     progress[value] {
-        width: ${props => props.width}
-        height: ${props => props.height}
-        appearance: none
+        width: ${props => props.width};
+        height: ${props => props.height};
+        appearance: none;
         
         ::-webkit-progress-bar{
-            height: 10px
-            border-radius: 20px
-            background-color: #8D918D
+            height: 10px;
+            border-radius: 20px;
+            background-color: #8D918D;
         }
      
 
         ::-webkit-progress-value {
-            height: 10px
-            border-radius: 20px
-            background-color: #000000
-        } 
+            height: 10px;
+            border-radius: 20px;
+            background-color: #000000;
+        }
     }
-`
+`;
 
 
 
