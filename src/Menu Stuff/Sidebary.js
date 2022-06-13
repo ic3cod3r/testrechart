@@ -3,10 +3,10 @@ import './Sidebar.css'
 import { slide as Menu } from 'react-burger-menu'
 import useFetch from 'use-http'
 import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-router-dom"
-import BarCharty from './barChart'
-import LineCharty from './lineChartBasic'
-import PieCharty from './pieChart'
-import Gear from './Gear'
+import BarCharty from '../charts/barChart'
+import LineCharty from '../charts/lineChartBasic'
+import PieCharty from '../charts/pieChart'
+import Gear from '../Gear'
 
 export default props => {
   return (

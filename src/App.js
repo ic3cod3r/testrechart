@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './App.css'
 import { Routes, Route, Outlet, Link, BrowserRouter as Router } from "react-router-dom"
-import ProgressBar from './NewProgressBar'
-import Sidebary from './Sidebary'
+import ProgressBar from './Menu Stuff/NewProgressBar'
+import Sidebary from './Menu Stuff/Sidebary'
 
 
 export default function App() {
