@@ -2,10 +2,10 @@ import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 
 const data = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
+  { name: 'Q1', value: 100 },
+  { name: 'Q2', value: 200 },
+  { name: 'Q3', value: 300 },
+  { name: 'Q4', value: 400 },
 ];
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
@@ -50,7 +50,7 @@ export default class PieCharty extends PureComponent {
           </Pie>
         </PieChart>
         <div>
-          <h1 style={{ textAlign: "center" }}> Efficiency over each quarter </h1>
+          <h1 style={{ textAlign: "center" }}> Sales over each quarter </h1>
         </div></>
 
     );
