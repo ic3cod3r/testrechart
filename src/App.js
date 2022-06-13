@@ -25,8 +25,11 @@ export default function App() {
     <div>
       <div>
         <Sidebary/>
+          {/* <div>
+            <BarCharty/>
+          </div> */}
       </div>
-      <div>
+      {/* <div>
         <h1 style={{ textAlign: "center" }}> Hi ShipStation!</h1>
       </div>
       <div>
@@ -37,7 +40,7 @@ export default function App() {
       </div>
       <div>
         <PieCharty />
-      </div>
+      </div> */}
       <ProgressBar value={progress} />
     </div>
   )
