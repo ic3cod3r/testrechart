@@ -58,7 +58,8 @@ function Layout() {
   )
 }
 
-function Home(id=0) {
+
+function Home() {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}> Hi ShipStation!</h1>
@@ -67,7 +68,7 @@ function Home(id=0) {
   )
 }
 
-function Bar(id=1) {
+function Bar() {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>Efficiency over each quarter</h1>
@@ -76,7 +77,7 @@ function Bar(id=1) {
   )
 }
 
-function Line(id=2) {
+function Line() {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>Efficiency over each quarter</h1>
@@ -85,7 +86,7 @@ function Line(id=2) {
   )
 }
 
-function Pie(id=3) {
+function Pie() {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}> Sales over each quarter </h1>
