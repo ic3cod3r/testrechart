@@ -6,19 +6,23 @@ import Sidebary from './Menu Stuff/Sidebary'
 
 
 export default function App() {
-  const [progress, setProgress] = React.useState(1)
+  const [progress, setProgress, item] = React.useState(1)
   
 
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((prevProgress) => (prevProgress >= 100 ? 10 : prevProgress + 1))
-    }, 100)
-    return () => {
-      clearInterval(timer)
+  // React.useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setProgress((prevProgress) => (prevProgress >= 100 ? 10 : prevProgress + 1))
+  //   }, 100)
+  //   return () => {
+  //     clearInterval(timer)
       
-    }
-  }, [])
+  //   }
+  // }, [])
 
+  React.useEffect(() => {
+    const timer = setInterval(() => setProgress(item[id >= (item.length - 1) ? 0 : id + 1]), 1000)
+    return () => clearInterval(timer)
+  }, [item])
 
   return (
     <div>
@@ -34,4 +38,6 @@ export default function App() {
     </div>
   )
 }
-//test
+
+
+

@@ -13,7 +13,7 @@ export default props => {
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Home />}  />
           <Route path="stats1" element={<Bar />} />
           <Route path="stats2" element={<Line />} />
           <Route path="stats3" element={<Pie />} />
@@ -58,7 +58,7 @@ function Layout() {
   )
 }
 
-function Home() {
+function Home(id=0) {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}> Hi ShipStation!</h1>
@@ -67,7 +67,7 @@ function Home() {
   )
 }
 
-function Bar() {
+function Bar(id=1) {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>Efficiency over each quarter</h1>
@@ -76,7 +76,7 @@ function Bar() {
   )
 }
 
-function Line() {
+function Line(id=2) {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>Efficiency over each quarter</h1>
@@ -85,7 +85,7 @@ function Line() {
   )
 }
 
-function Pie() {
+function Pie(id=3) {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}> Sales over each quarter </h1>
