@@ -15,10 +15,9 @@ export default function App() {
     }, 100)
     return () => {
       clearInterval(timer)
-      //I think this is where I would put some code to make the site cycle through the charts
+      
     }
   }, [])
-
 
 
   return (

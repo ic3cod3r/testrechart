@@ -23,27 +23,6 @@ export default props => {
   )
 }
 
-// export default props => {
-//   return (
-//     <Menu>
-//       <Router>
-//         <Routes>
-//           <Route path="/" element={<Layout />}>
-//             <Route index element={<Home />} />
-//             <Route path="stats1" element={<Bar />} />
-//             <Route path="stats2" element={<Line />} />
-//             <Route path="stats3" element={<Pie />} />
-//           </Route>
-//         </Routes>
-//       </Router>
-//     </Menu>
-
-//   )
-// }
-
-
-
-
 
 
 
