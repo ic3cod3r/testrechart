@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
-import './App.css'
-import ProgressBar from './Menu Stuff/NewProgressBar'
-import Sidebary from './Menu Stuff/Sidebary'
+import '../CSS/App.css'
+import ProgressBar from '../Menu Stuff/NewProgressBar'
+import Sidebary from '../Menu Stuff/Sidebary'
 
 
 export default function App() {

@@ -1,10 +1,10 @@
 import React from 'react'
-import './Sidebar.css'
+import '../CSS/Sidebar.css'
 import { Routes, Route, Outlet, Link, BrowserRouter as Router, unstable_HistoryRouter as HistoryRouter } from "react-router-dom"
 import BarCharty from '../charts/barChart'
 import LineCharty from '../charts/lineChartBasic'
 import PieCharty from '../charts/pieChart'
-import Gear from '../Gear'
+import Gear from '../image/Gear'
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './App.css'
+import styles from '../CSS/App.css'
 import gear from './shipStation.png'
 import Image from 'react-image-resizer'
 
