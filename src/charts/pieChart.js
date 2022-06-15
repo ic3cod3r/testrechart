@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts'
 
-const data = [
+const data = [  //this is the data seen in the chart
   { name: 'Q1', value: 100 },
   { name: 'Q2', value: 200 },
   { name: 'Q3', value: 300 },
@@ -28,6 +28,8 @@ export default class PieCharty extends PureComponent {
 
   render() {
     return (
+
+      //this is what determines the size and stuff of the chart
         <PieChart
          width={1600} 
          height={600}

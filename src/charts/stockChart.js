@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from "react"
 import { LineChart, Line, Tooltip, ResponsiveContainer } from 'recharts'
 
-export default function StockChart() {
+export default function StockChart() {  //this is the data seen in the chart, this one is different as it is an api call, which is more like what we would do for the dashboard once we start it.
     const [error, setError] = useState(null)
     const [isLoaded, setIsLoaded] = useState(false)
     const [items, setItems] = useState([])
@@ -32,6 +32,7 @@ export default function StockChart() {
         )
     }, [])
     return (
+      //here is the sizing and stuff for the graph
     <div>
       
         <LineChart width={500} height={250} margin={{ top: 150, right: 30, left: 20, bottom: 5 }} data={items}>
@@ -43,7 +44,7 @@ export default function StockChart() {
     )
 }
 
-function CustomTooltip(props) {
+function CustomTooltip(props) {  //here is the animation part, which makes it look like it flew on the screen
   var price = ""
   var date = ""
   console.log(props)

@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from 'styled-components'
 
-
+//this is what sets the position and size of the progress bar outline, and the actuall progress bar line
 const Container = styled.div`
     progress[value] {
         width: ${props => props.width};
@@ -37,7 +37,7 @@ const ProgressBar = props => {
 }
 
 
-
+//all below is also what position the bar and outline
 ProgressBar.propTypes = {
     value: PropTypes.number.isRequired,
     max: PropTypes.number,

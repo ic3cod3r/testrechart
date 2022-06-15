@@ -7,7 +7,7 @@ import PieCharty from '../charts/pieChart'
 import Gear from '../image/Gear'
 
 
-
+//these are the routes that are seen on the sidebar
 export default props => {
   return (
     <Router>
@@ -58,7 +58,7 @@ function Layout() {
   )
 }
 
-
+//down below is what each route will take you to, so when you click on one of them, it will take you to a certain chart or image
 function Home() {
   return (
     <div>

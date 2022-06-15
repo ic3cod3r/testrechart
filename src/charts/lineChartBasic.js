@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts'
 
-const data = [
+const data = [   //this is the data that shows up on the charts
   {
     name: 'Q1',
     ordersCancelled: 4000,
@@ -33,6 +33,8 @@ export default class LineCharty extends PureComponent {
 
   render() {
     return (
+
+      //This here is what sets the size and x/y axis and the legend
         <LineChart
             width={1590}
             height={590}

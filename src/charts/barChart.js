@@ -33,7 +33,8 @@ export default class BarCharty extends PureComponent {
 
   render() {
     return (
-
+      
+      //This here is what sets the size and x/y axis and the legend
       <BarChart
         width={1590}
         height={590}

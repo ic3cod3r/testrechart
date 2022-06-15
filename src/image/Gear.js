@@ -6,7 +6,7 @@ import Image from 'react-image-resizer'
 console.log(gear)
 console.log(styles)
 
-function Gear() {
+function Gear() {  //this is the shipstation gear on the home page, this is the part where it determines where on the page it will be placed
     return (
         <div className="imageContainer">
             <Image
